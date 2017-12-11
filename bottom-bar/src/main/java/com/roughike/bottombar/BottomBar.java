@@ -832,7 +832,7 @@ public class BottomBar extends LinearLayout implements View.OnClickListener, Vie
     }
 
     private void resizeForDrawingUnderNavbar() {
-        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.KITKAT) {
+        if (Build.VERSION.SDK_INT > Build.VERSION_CODES.KITKAT) {
             int currentHeight = getHeight();
 
             if (currentHeight != 0 && !navBarAccountedHeightCalculated) {
